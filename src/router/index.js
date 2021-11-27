@@ -8,7 +8,19 @@ const routes = [
   {
     path: '/',
     name: 'Main',
-    component: Main
+    component: Main,
+    children: [
+      {
+        path:'/',
+        name:'home',
+        component: ()=>import('@/views/Home/Home.vue')
+      },
+      {
+        path:'MallMange',
+        name:'mall',
+        component: ()=>import('@/views/MallMange/MallMange.vue')
+      },
+    ]
   },
   {
     path: '/about',

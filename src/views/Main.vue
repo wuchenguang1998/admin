@@ -1,5 +1,5 @@
 <template>
-  <el-container style="height: 100%;">
+  <el-container style="height: 100%;background-color: rgb(223, 226, 226);">
     <el-aside width="auto">
       <CommonAside></CommonAside>
     </el-aside>
@@ -7,7 +7,9 @@
       <el-header>
         <CommonHeader></CommonHeader>
       </el-header>
-      <el-main>Main</el-main>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
     </el-container>
   </el-container>
 </template>
